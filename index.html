@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islands Inventory Catalog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="title">Islands Inventory Catalog</div>
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchItems()" placeholder="Search for items..." class="search-bar">
+    </div>
+</header>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div id="modalItems" class="modal-items"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
